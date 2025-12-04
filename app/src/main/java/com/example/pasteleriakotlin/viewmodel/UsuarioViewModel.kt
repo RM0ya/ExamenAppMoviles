@@ -2,8 +2,8 @@ package com.example.pasteleriakotlin.viewmodel
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.pasteleriakotlin.data.UsuarioDAO
-import com.example.pasteleriakotlin.data.Usuario
+import com.example.pasteleriakotlin.data.localdao.UsuarioDAO
+import com.example.pasteleriakotlin.data.localdao.Usuario
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.stateIn
@@ -19,4 +19,5 @@ class UsuarioViewModel(private val dao: UsuarioDAO) : ViewModel() {
             dao.insertarUsuario(Usuario(nombre = nombre, contrasena = contrasena))
         }
     }
+
 }
