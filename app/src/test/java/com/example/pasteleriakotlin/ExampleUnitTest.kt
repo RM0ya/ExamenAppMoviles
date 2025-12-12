@@ -1,4 +1,4 @@
-package com.example.pasteleriakotlin
+package com.example.pasteleriakotlin.JunitTest
 
 import org.junit.Test
 
