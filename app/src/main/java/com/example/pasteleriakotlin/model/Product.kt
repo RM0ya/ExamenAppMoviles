@@ -1,8 +1,13 @@
 package com.example.pasteleriakotlin.model
 
+import androidx.room.Entity
+import androidx.room.PrimaryKey
+
+@Entity(tableName = "productos")
+
 data class Product(
 
-    val id: Int = 0,
+    @PrimaryKey(autoGenerate = true) val id: Int,
     val nombre: String,
     val descripcion: String,
     val precio: Double,
